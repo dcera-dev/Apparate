@@ -1,0 +1,77 @@
+.container {
+    margin: auto;
+    width: 100%;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.actionButtons {
+    margin-top: 2vh;
+    gap: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header {
+    font-size: 3em;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.linkInput {
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+    background-color: #535077d9;
+    border-radius: 7px;
+    border: none;
+    min-height: 20%;
+    margin: 0 0 1vh;
+}
+
+.linkInput:focus {
+    outline: none;
+}
+
+.linkInput::placeholder {
+    color: aliceblue;
+}
+
+.buttons {
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    color: aliceblue;
+    border: none;
+    border-radius: 7px;
+    background-color: #535077d9;
+    min-height: 2vh;
+    min-width: 2vw;
+    height: 25%;
+    width: 30%;
+}
+
+.buttons:disabled {
+    opacity: 50%;
+    color: grey;
+}
+
+.errorDiv {
+    margin-top: 1vh;
+    width: 100%;
+    height: 3vh;
+}
+
+.errorMsg {
+    text-align: center;
+    color: red;
+    text-shadow: 1px 1px black;
+    opacity: 70%;
+    font-size: large;
+}

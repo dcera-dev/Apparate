@@ -1,0 +1,31 @@
+.container {
+    min-width: 50%;
+    width: 75%;
+    min-height: 50%;
+    margin: auto;
+    aspect-ratio: 1/1;
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
+    filter: opacity(70%) blur(1px);
+    animation: rotation 120s infinite linear;
+    z-index: -1;
+}
+
+.formDiv {
+    bottom: 36%;
+    position: absolute;
+    width: inherit;
+    height: fit-content;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
