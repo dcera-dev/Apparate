@@ -50,6 +50,7 @@ export async function apparateVideo(data) {
             throw new Error(`Response status: ${response.status}`);
         }
         response = await response.json();
+        console.log(response);
         let iTag = getItag(response.streamingData.adaptiveFormats);
         let range = Number(iTag.contentLength);
         if (range > 1000000) {
